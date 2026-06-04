@@ -1,28 +1,26 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Homepage</title>
+  <title>Yuang Ai</title>
 
-  <meta name="author" content="Jon Barron">
+  <meta name="author" content="Yuang Ai">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>AI</text></svg>">
+	<link rel="icon" type="image/jpeg" href="assets/60562734.jpeg">
 
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
     integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
     </script>
-  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
 </head>
 
 <body>
@@ -50,9 +48,9 @@
                   </a>
                 </div>
 
-                <div id="navbar" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div id="navbar" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav navbar-right">
-                      <li style="font-size:20px"><a class='name' href="">Home</a></li>
+                      <li style="font-size:20px"><a class='name' href="/">Home</a></li>
 
 
                       <li style="font-size:20px"><a class='name' href="#research">Research</a></li>
@@ -65,20 +63,19 @@
               </div>
             </nav>
 
-            <!-- from https://yangekun.gitee.io/blog/2018/12/14/2018-12-14-Bootstrap%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E8%87%AA%E5%8A%A8%E6%8A%98%E5%8F%A0%E9%9A%90%E8%97%8F/ -->
             <script>
-                  $(window).scroll(function () {
-                //小屏幕下的导航条折叠
-                if ($(window).width() < 768) {
-                  //点击导航链接之后，把导航选项折叠起来
-                  $("#navbar a").click(function () {
-                    $("#navbar").collapse('hide');
-                  });
-                  //滚动屏幕时，把导航选项折叠起来
-                  $(window).scroll(function () {
-                    $("#navbar").collapse('hide');
-                  });
-                }
+              $(function () {
+                $("#navbar a").on("click", function () {
+                  if ($(window).width() < 768) {
+                    $("#navbar").collapse("hide");
+                  }
+                });
+
+                $(window).on("scroll", function () {
+                  if ($(window).width() < 768) {
+                    $("#navbar").collapse("hide");
+                  }
+                });
               });
             </script>
 
@@ -86,22 +83,19 @@
           </tr>
         </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <br>
+	        <br>
+	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
                 <name>Yuang Ai</name>
               </p>
-              <p> Hi, welcome to my website!</a>
+              <p> Hi, welcome to my website!
               </p>
               <p> I'm Yuang Ai, a third-year Master's student in <a href="http://cripac.ia.ac.cn/en/EN/volumn/home.shtml">NLPR-CASIA</a> supervised by Prof. <a href="https://scholar.google.com/citations?user=XMvLciUAAAAJ">Huaibo Huang</a> and Prof. <a href="https://scholar.google.com/citations?user=ayrg9AUAAAAJ">Ran He</a>.
               </p>
               <p>
-                Before that, I obtained my bachelor degree in electronic information engineering from <a href="https://english.bit.edu.cn/">Beĳing Institute of Technology</a> (GPA:3.9/4.0, Rank:3/397).
-              </p>
-              <p>
-                My recent research interests primarily focus on topics with significant real-world applications, like efficient visual generative models, unified multi-modal large language models, etc. 
+                My recent research interests primarily focus on topics with significant real-world applications, like foundation generative models, unified multimodal models, etc.
               </p>
                 <p>
                   I am open to any discussion or collaboration. If you are interested, please feel free to contact me via email.
@@ -116,7 +110,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:60%;max-width:100%" alt="profile photo" src="assets//Yuang_White.webp" class='img-fluid'></a>
+              <img style="width:60%;max-width:100%" alt="profile photo" src="assets/Yuang_White.webp" class='img-fluid'>
             </td>
           </tr>
         </tbody></table>
@@ -132,29 +126,12 @@
           </tr>
         </tbody></table>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr onmouseout="switchnerf_stop()" onmouseover="switchnerf_start()">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- <div id='ssrnet_anim' class='hidden'>
-                <a href=""><img src="images/ECCV2012_small.gif"></a>
-              </div> -->
-              <div id='switchnerf_still'><img src="images/bitdance.webp" width="200"></div>
-              <script type="text/javascript">
-                function switchnerf_start() {
-                  document.getElementById('eccv12_anim').style.display = 'inline';
-                  document.getElementById('eccv12_still').style.display = 'none';
-                }
-
-                function switchnerf_stop() {
-                  document.getElementById('eccv12_anim').style.display = 'none';
-                  document.getElementById('eccv12_still').style.display = 'inline';
-                }
-                switchnerf_stop()
-              </script>
+              <img src="images/bitdance.webp" width="200" alt="BitDance preview">
             </td>
             <td width="75%" valign="middle">
-               <!-- <a href="switchnerf"> -->
               <a href="https://arxiv.org/pdf/2602.14041">
                 <papertitle>BitDance: Scaling Autoregressive Generative Models with Binary Tokens</papertitle>
               </a>
@@ -163,35 +140,16 @@
               <br>
               <strong><em>Preprint</em></strong>, 2026
               <br>
-              <!-- <a href="switchnerf">project page</a> / -->
               <a href="https://arxiv.org/pdf/2602.14041">paper</a> /
               <a href="https://github.com/shallowdream204/BitDance">code</a> <a href="https://github.com/shallowdream204/BitDance"><img alt="GitHub stars" src="https://img.shields.io/github/stars/shallowdream204/BitDance"></a>
             </td>
           </tr>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr onmouseout="switchnerf_stop()" onmouseover="switchnerf_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- <div id='ssrnet_anim' class='hidden'>
-                <a href=""><img src="images/ECCV2012_small.gif"></a>
-              </div> -->
-              <div id='switchnerf_still'><img src="images/uniwetok.webp" width="200"></div>
-              <script type="text/javascript">
-                function switchnerf_start() {
-                  document.getElementById('eccv12_anim').style.display = 'inline';
-                  document.getElementById('eccv12_still').style.display = 'none';
-                }
-
-                function switchnerf_stop() {
-                  document.getElementById('eccv12_anim').style.display = 'none';
-                  document.getElementById('eccv12_still').style.display = 'inline';
-                }
-                switchnerf_stop()
-              </script>
+              <img src="images/uniwetok.webp" width="200" alt="UniWeTok preview">
             </td>
             <td width="75%" valign="middle">
-               <!-- <a href="switchnerf"> -->
               <a href="https://arxiv.org/pdf/2602.14178">
                 <papertitle>UniWeTok: An Unified Binary Tokenizer with Codebook Size 2<sup>128</sup> for Unified Multimodal Large Language Model</papertitle>
               </a>
@@ -200,36 +158,17 @@
               <br>
               <strong><em>Preprint</em></strong>, 2026
               <br>
-              <!-- <a href="switchnerf">project page</a> / -->
               <a href="https://arxiv.org/pdf/2602.14178">paper</a> /
               <a href="https://github.com/shallowdream204/BitDance">code</a>
             </td>
           </tr>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr onmouseout="switchnerf_stop()" onmouseover="switchnerf_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- <div id='ssrnet_anim' class='hidden'>
-                <a href=""><img src="images/ECCV2012_small.gif"></a>
-              </div> -->
-              <div id='switchnerf_still'><img src="images/DiCo.webp" width="200"></div>
-              <script type="text/javascript">
-                function switchnerf_start() {
-                  document.getElementById('eccv12_anim').style.display = 'inline';
-                  document.getElementById('eccv12_still').style.display = 'none';
-                }
-
-                function switchnerf_stop() {
-                  document.getElementById('eccv12_anim').style.display = 'none';
-                  document.getElementById('eccv12_still').style.display = 'inline';
-                }
-                switchnerf_stop()
-              </script>
+              <img src="images/DiCo.webp" width="200" alt="DiCo preview">
             </td>
             <td width="75%" valign="middle">
-               <!-- <a href="switchnerf"> -->
-              <a href="https://arxiv.org/pdf/2505.11196?">
+              <a href="https://arxiv.org/pdf/2505.11196">
                 <papertitle>DiCo: Revitalizing ConvNets for Scalable and Efficient Diffusion Modeling</papertitle>
               </a>
               <br>
@@ -237,35 +176,16 @@
               <br>
               <strong><em>NeurIPS Spotlight</em></strong>, 2025
               <br>
-              <!-- <a href="switchnerf">project page</a> / -->
-              <a href="https://arxiv.org/pdf/2505.11196?">paper</a> /
+              <a href="https://arxiv.org/pdf/2505.11196">paper</a> /
               <a href="https://github.com/shallowdream204/DiCo">code</a>
             </td>
           </tr>
-          
- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr onmouseout="switchnerf_stop()" onmouseover="switchnerf_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- <div id='ssrnet_anim' class='hidden'>
-                <a href=""><img src="images/ECCV2012_small.gif"></a>
-              </div> -->
-              <div id='switchnerf_still'><img src="images/DreamClear.webp" width="200"></div>
-              <script type="text/javascript">
-                function switchnerf_start() {
-                  document.getElementById('eccv12_anim').style.display = 'inline';
-                  document.getElementById('eccv12_still').style.display = 'none';
-                }
-
-                function switchnerf_stop() {
-                  document.getElementById('eccv12_anim').style.display = 'none';
-                  document.getElementById('eccv12_still').style.display = 'inline';
-                }
-                switchnerf_stop()
-              </script>
+              <img src="images/DreamClear.webp" width="200" alt="DreamClear preview">
             </td>
             <td width="75%" valign="middle">
-               <!-- <a href="switchnerf"> -->
               <a href="https://arxiv.org/pdf/2410.18666">
                 <papertitle>DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation</papertitle>
               </a>
@@ -274,44 +194,16 @@
               <br>
               <strong><em>NeurIPS</em></strong>, 2024
               <br>
-              <!-- <a href="switchnerf">project page</a> / -->
               <a href="https://arxiv.org/pdf/2410.18666">paper</a> /
               <a href="https://github.com/shallowdream204/DreamClear">code</a> <a href="https://github.com/shallowdream204/DreamClear"><img alt="GitHub stars" src="https://img.shields.io/github/stars/shallowdream204/DreamClear"></a>
-<!--               <a href="https://www.bilibili.com/video/BV1anV7e8EoD/?share_source=copy_web&vd_source=8e7b288f904dcf9e4dfb9432677c50ea">talk</a>  -->
-<!--               <a href="https://openreview.net/forum?id=QW5ouyyIgG">openreview</a> /
-<!--               <a href="https://yangcaoai.github.io/publications/CoDA.html">project</a> --> 
-<!--              Code and paper will be updated soon.-->
-              <!-- <a href="data/BarronMalikECCV2012.bib">bibtex</a> / -->
-              <!-- <a href="https://drive.google.com/file/d/12x8mhqpFsA6p0u6ZQW-ieRKF8hlQBKKe/view?usp=sharing">poster</a> / -->
-              <!-- <a href="http://www.youtube.com/watch?v=NnePYprvFvA">video</a> -->
-              <!-- <p>This paper is subsumed by <a href="#SIRFS">SIRFS</a>.</p> -->
             </td>
           </tr>
 
-  
- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr onmouseout="switchnerf_stop()" onmouseover="switchnerf_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- <div id='ssrnet_anim' class='hidden'>
-                <a href=""><img src="images/ECCV2012_small.gif"></a>
-              </div> -->
-              <div id='switchnerf_still'><img src="images/SODA.webp" width="200"></div>
-              <script type="text/javascript">
-                function switchnerf_start() {
-                  document.getElementById('eccv12_anim').style.display = 'inline';
-                  document.getElementById('eccv12_still').style.display = 'none';
-                }
-
-                function switchnerf_stop() {
-                  document.getElementById('eccv12_anim').style.display = 'none';
-                  document.getElementById('eccv12_still').style.display = 'inline';
-                }
-                switchnerf_stop()
-              </script>
+              <img src="images/SODA.webp" width="200" alt="SODA preview">
             </td>
             <td width="75%" valign="middle">
-               <!-- <a href="switchnerf"> -->
               <a href="https://arxiv.org/pdf/2303.17783.pdf">
                 <papertitle>Uncertainty-Aware Source-Free Adaptive Image Super-Resolution with Wavelet Augmentation Transformer</papertitle>
               </a>
@@ -320,42 +212,16 @@
               <br>
               <strong><em>CVPR</em></strong>, 2024
               <br>
-              <!-- <a href="switchnerf">project page</a> / -->
               <a href="https://arxiv.org/pdf/2303.17783.pdf">paper</a> /
-               <a href="https://shallowdream204.github.io/soda-sr-project/">code</a>
-<!--               <a href="https://openreview.net/forum?id=QW5ouyyIgG">openreview</a> /
-              <a href="https://yangcaoai.github.io/publications/CoDA.html">project</a> -->
-<!--              Code and paper will be updated soon.-->
-              <!-- <a href="data/BarronMalikECCV2012.bib">bibtex</a> / -->
-              <!-- <a href="https://drive.google.com/file/d/12x8mhqpFsA6p0u6ZQW-ieRKF8hlQBKKe/view?usp=sharing">poster</a> / -->
-              <!-- <a href="http://www.youtube.com/watch?v=NnePYprvFvA">video</a> -->
-              <!-- <p>This paper is subsumed by <a href="#SIRFS">SIRFS</a>.</p> -->
+              <a href="https://shallowdream204.github.io/soda-sr-project/">code</a>
             </td>
           </tr>
 
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr onmouseout="switchnerf_stop()" onmouseover="switchnerf_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- <div id='ssrnet_anim' class='hidden'>
-                <a href=""><img src="images/ECCV2012_small.gif"></a>
-              </div> -->
-              <div id='switchnerf_still'><img src="images/MPerceiver.webp" width="200"></div>
-              <script type="text/javascript">
-                function switchnerf_start() {
-                  document.getElementById('eccv12_anim').style.display = 'inline';
-                  document.getElementById('eccv12_still').style.display = 'none';
-                }
-
-                function switchnerf_stop() {
-                  document.getElementById('eccv12_anim').style.display = 'none';
-                  document.getElementById('eccv12_still').style.display = 'inline';
-                }
-                switchnerf_stop()
-              </script>
+              <img src="images/MPerceiver.webp" width="200" alt="MPerceiver preview">
             </td>
             <td width="75%" valign="middle">
-               <!-- <a href="switchnerf"> -->
               <a href="https://arxiv.org/pdf/2312.02918.pdf">
                 <papertitle>Multimodal Prompt Perceiver: Empower Adaptiveness, Generalizability and Fidelity for All-in-One Image Restoration</papertitle>
               </a>
@@ -364,43 +230,16 @@
               <br>
               <strong><em>CVPR</em></strong>, 2024
               <br>
-              <!-- <a href="switchnerf">project page</a> / -->
               <a href="https://arxiv.org/pdf/2312.02918.pdf">paper</a> /
-              <a href="https://shallowdream204.github.io/mperceiver-project/">code</a> 
-<!--               <a href="https://www.bilibili.com/video/BV1anV7e8EoD/?share_source=copy_web&vd_source=8e7b288f904dcf9e4dfb9432677c50ea">talk</a>  -->
-<!--               <a href="https://openreview.net/forum?id=QW5ouyyIgG">openreview</a> /
-<!--               <a href="https://yangcaoai.github.io/publications/CoDA.html">project</a> --> 
-<!--              Code and paper will be updated soon.-->
-              <!-- <a href="data/BarronMalikECCV2012.bib">bibtex</a> / -->
-              <!-- <a href="https://drive.google.com/file/d/12x8mhqpFsA6p0u6ZQW-ieRKF8hlQBKKe/view?usp=sharing">poster</a> / -->
-              <!-- <a href="http://www.youtube.com/watch?v=NnePYprvFvA">video</a> -->
-              <!-- <p>This paper is subsumed by <a href="#SIRFS">SIRFS</a>.</p> -->
+              <a href="https://shallowdream204.github.io/mperceiver-project/">code</a>
             </td>
           </tr>
 
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr onmouseout="switchnerf_stop()" onmouseover="switchnerf_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- <div id='ssrnet_anim' class='hidden'>
-                <a href=""><img src="images/ECCV2012_small.gif"></a>
-              </div> -->
-              <div id='switchnerf_still'><img src="images/iccv25.webp" width="200"></div>
-              <script type="text/javascript">
-                function switchnerf_start() {
-                  document.getElementById('eccv12_anim').style.display = 'inline';
-                  document.getElementById('eccv12_still').style.display = 'none';
-                }
-
-                function switchnerf_stop() {
-                  document.getElementById('eccv12_anim').style.display = 'none';
-                  document.getElementById('eccv12_still').style.display = 'inline';
-                }
-                switchnerf_stop()
-              </script>
+              <img src="images/iccv25.webp" width="200" alt="Rectifying Magnitude Neglect in Linear Attention preview">
             </td>
             <td width="75%" valign="middle">
-               <!-- <a href="switchnerf"> -->
               <a href="https://arxiv.org/pdf/2507.00698">
                 <papertitle>Rectifying Magnitude Neglect in Linear Attention</papertitle>
               </a>
@@ -409,62 +248,28 @@
               <br>
               <strong><em>ICCV Highlight</em></strong>, 2025
               <br>
-              <!-- <a href="switchnerf">project page</a> / -->
               <a href="https://arxiv.org/pdf/2507.00698">paper</a> /
               <a href="https://github.com/qhfan/MALA">code</a>
- 
-<!--              Code and paper will be updated soon.-->
-              <!-- <a href="data/BarronMalikECCV2012.bib">bibtex</a> / -->
-              <!-- <a href="https://drive.google.com/file/d/12x8mhqpFsA6p0u6ZQW-ieRKF8hlQBKKe/view?usp=sharing">poster</a> / -->
-              <!-- <a href="http://www.youtube.com/watch?v=NnePYprvFvA">video</a> -->
-              <!-- <p>This paper is subsumed by <a href="#SIRFS">SIRFS</a>.</p> -->
             </td>
           </tr>
 
-        
-
-  
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-<tr onmouseout="gbinet_stop()" onmouseover="gbinet_start()">
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- <div id='ssrnet_anim' class='hidden'>
-                <a href=""><img src="images/ECCV2012_small.gif"></a>
-              </div> -->
-              <div id='gbinet_still'><img src="images/InfiMM.webp" width="200"></div>
-              <script type="text/javascript">
-                function gbinet_start() {
-                  document.getElementById('eccv12_anim').style.display = 'inline';
-                  document.getElementById('eccv12_still').style.display = 'none';
-                }
-
-                function gbinet_stop() {
-                  document.getElementById('eccv12_anim').style.display = 'none';
-                  document.getElementById('eccv12_still').style.display = 'inline';
-                }
-                gbinet_stop()
-              </script>
+              <img src="images/InfiMM.webp" width="200" alt="InfiMM-WebMath-40B preview">
             </td>
             <td width="75%" valign="middle">
               <a href="https://arxiv.org/pdf/2409.12568">
-              <papertitle>InfiMM-WebMath-40B: Advancing Multimodal Pre-Training for Enhanced Mathematical Reasoning</papertitle>
+                <papertitle>InfiMM-WebMath-40B: Advancing Multimodal Pre-Training for Enhanced Mathematical Reasoning</papertitle>
               </a>
               <br>
               Xiaotian Han, Yiren Jian, Xuefeng Hu, Haogeng Liu, Yiqi Wang, Qihang Fan, <strong>Yuang Ai</strong>, Huaibo Huang, Ran He, Zhenheng Yang, and Quanzeng You.
               <br>
               <strong><em>EMNLP Findings</em></strong>, 2025
               <br>
-              <!-- <a href="gbinet">project page</a> /-->
               <a href="https://arxiv.org/pdf/2409.12568">paper</a> /
               <a href="https://huggingface.co/datasets/Infi-MM/InfiMM-WebMath-40B">dataset</a>
-              <!-- <a href="data/BarronMalikECCV2012.bib">bibtex</a> / -->
-              <!-- <a href="https://drive.google.com/file/d/12x8mhqpFsA6p0u6ZQW-ieRKF8hlQBKKe/view?usp=sharing">poster</a> / -->
-              <!-- <a href="http://www.youtube.com/watch?v=NnePYprvFvA">video</a> -->
-              <!-- <p>This paper is subsumed by <a href="#SIRFS">SIRFS</a>.</p> -->
             </td>
           </tr>
-
-
         </tbody></table>
 
 
@@ -486,11 +291,10 @@
               <!-- <td width="100%" valign="center" style="line-height: 15px;"> -->
               <td width="100%" style="width:100%; padding:0 0px;">
                 <ul class="navlist">
-			<li><strong>ByteDance</strong>
-        <i>2024.03-present, Research intern</i><br> Research: Generative models and multi-modal large language models.</li>
+                  <li><strong>ByteDance TikTok</strong><br><i>2025.02 - Present</i><br>Foundation Generative Models &amp; Unified Multimodal Models</li>
                 </ul>
                 <ul class="navlist">
-			<li><strong>OPPO Research Institute</strong> <i>2023.01-2023.03, Research intern</i><br> Research: Real-world image super-resolution.</li>
+                  <li><strong>ByteDance Seed</strong><br><i>2024.03 - 2025.02</i><br>Vision-Language Models &amp; Applications of Generative Models</li>
                 </ul>
 
               </td>
@@ -613,21 +417,21 @@
           </tr>
         </tbody></table> -->
 
-
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
+	        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	          <tr>
+	            <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
                 Thanks for the source codes from <a href="https://yangcaoai.github.io/">Yang Cao</a>.
               </p>
             </td>
           </tr>
-        </tbody></table>
+	        </tbody></table>
 
 
-  </table>
+	      </td>
+	    </tr>
+	  </tbody></table>
 
 
 
