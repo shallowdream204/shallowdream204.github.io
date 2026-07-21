@@ -129,3 +129,62 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.experience-list {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0 auto 8px;
+}
+
+.experience-logo-cell {
+  width: 25%;
+  padding: 12px 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.experience-logo {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  object-position: center;
+}
+
+.experience-logo-tiktok {
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+}
+
+.experience-logo-seed {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.experience-details {
+  width: 75%;
+  padding: 12px 20px 12px 0;
+  line-height: 1.55;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .experience-logo-cell {
+    width: 30%;
+    padding: 10px;
+  }
+
+  .experience-logo-seed {
+    width: 130px;
+  }
+
+  .experience-logo-tiktok {
+    width: 100px;
+  }
+
+  .experience-details {
+    width: 70%;
+    padding: 10px 10px 10px 0;
+  }
+}
